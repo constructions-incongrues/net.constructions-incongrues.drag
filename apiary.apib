@@ -1,0 +1,24 @@
+HOST: http://www.google.com/
+
+--- DRAG ---
+
+--
+Named transformations
+--
+
+Create a thumbnail of image 
+GET /thumbnail/{width}/{height}/{?url}
+< 200
+< Content-Type: image/png
+
+
+Crop image
+GET /crop/{width}/{height}{?url}
+< 200
+< Content-Type: image/png
+
+
+Crom image
+GET /crop/{width}/{height}/{left}/{top}{?url}
+< 200
+< Content-Type: image/png
